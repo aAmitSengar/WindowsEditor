@@ -1,0 +1,10 @@
+C:\Users\amits\Downloads\simplepopup\SimplePopup\src\PopupControl\bin\Debug\PopupControl.dll
+C:\Users\amits\Downloads\simplepopup\SimplePopup\src\PopupControl\bin\Debug\PopupControl.pdb
+C:\Users\amits\Downloads\simplepopup\SimplePopup\src\PopupControl\obj\Debug\PopupControl.csprojResolveAssemblyReference.cache
+C:\Users\amits\Downloads\simplepopup\SimplePopup\src\PopupControl\obj\Debug\PopupControl.dll
+C:\Users\amits\Downloads\simplepopup\SimplePopup\src\PopupControl\obj\Debug\PopupControl.pdb
+C:\Users\amits\Desktop\Eq2Img_all\Eq2ImgWinForms\PopupControl\bin\Debug\PopupControl.dll
+C:\Users\amits\Desktop\Eq2Img_all\Eq2ImgWinForms\PopupControl\bin\Debug\PopupControl.pdb
+C:\Users\amits\Desktop\Eq2Img_all\Eq2ImgWinForms\PopupControl\obj\Debug\PopupControl.csprojResolveAssemblyReference.cache
+C:\Users\amits\Desktop\Eq2Img_all\Eq2ImgWinForms\PopupControl\obj\Debug\PopupControl.dll
+C:\Users\amits\Desktop\Eq2Img_all\Eq2ImgWinForms\PopupControl\obj\Debug\PopupControl.pdb

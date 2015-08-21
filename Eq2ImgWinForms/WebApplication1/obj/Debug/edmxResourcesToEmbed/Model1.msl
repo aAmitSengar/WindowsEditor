@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuestionRecordsModelStoreContainer" CdmEntityContainer="QuestionRecordsEntities">
+    <EntitySetMapping Name="Error_Log">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.Error_Log">
+        <MappingFragment StoreEntitySet="Error_Log">
+          <ScalarProperty Name="Error_Source" ColumnName="Error_Source" />
+          <ScalarProperty Name="Error_Number" ColumnName="Error_Number" />
+          <ScalarProperty Name="Error_Msg" ColumnName="Error_Msg" />
+          <ScalarProperty Name="Error_Date" ColumnName="Error_Date" />
+          <ScalarProperty Name="Error_ID" ColumnName="Error_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionDetails">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.QuestionDetail">
+        <MappingFragment StoreEntitySet="QuestionDetail">
+          <ScalarProperty Name="QueOption_Sqn" ColumnName="QueOption_Sqn" />
+          <ScalarProperty Name="QueOption_Other" ColumnName="QueOption_Other" />
+          <ScalarProperty Name="QueOption_Hindi" ColumnName="QueOption_Hindi" />
+          <ScalarProperty Name="QueOption_Eng" ColumnName="QueOption_Eng" />
+          <ScalarProperty Name="QueOption_QuestionID" ColumnName="QueOption_QuestionID" />
+          <ScalarProperty Name="QueOptionID" ColumnName="QueOptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionMasters">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.QuestionMaster">
+        <MappingFragment StoreEntitySet="QuestionMaster">
+          <ScalarProperty Name="QueModifyBy" ColumnName="QueModifyBy" />
+          <ScalarProperty Name="QueModifyOn" ColumnName="QueModifyOn" />
+          <ScalarProperty Name="QueIsApproved" ColumnName="QueIsApproved" />
+          <ScalarProperty Name="QueCreateOn" ColumnName="QueCreateOn" />
+          <ScalarProperty Name="QueCreateBy" ColumnName="QueCreateBy" />
+          <ScalarProperty Name="QueIsActive" ColumnName="QueIsActive" />
+          <ScalarProperty Name="QueTitleOther" ColumnName="QueTitleOther" />
+          <ScalarProperty Name="QueTitleHindi" ColumnName="QueTitleHindi" />
+          <ScalarProperty Name="QueTitleEng" ColumnName="QueTitleEng" />
+          <ScalarProperty Name="QueSubSubjectID" ColumnName="QueSubSubjectID" />
+          <ScalarProperty Name="QueSubjectID" ColumnName="QueSubjectID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleMasters">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.RoleMaster">
+        <MappingFragment StoreEntitySet="RoleMaster">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectMasters">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.SubjectMaster">
+        <MappingFragment StoreEntitySet="SubjectMaster">
+          <ScalarProperty Name="SubjectCreateOn" ColumnName="SubjectCreateOn" />
+          <ScalarProperty Name="SubjectIsActive" ColumnName="SubjectIsActive" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubSubjectMasters">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.SubSubjectMaster">
+        <MappingFragment StoreEntitySet="SubSubjectMaster">
+          <ScalarProperty Name="SubSubjectCreateOn" ColumnName="SubSubjectCreateOn" />
+          <ScalarProperty Name="SubSubjectIsActive" ColumnName="SubSubjectIsActive" />
+          <ScalarProperty Name="SubSubjectName" ColumnName="SubSubjectName" />
+          <ScalarProperty Name="SubSubjectMasterID" ColumnName="SubSubjectMasterID" />
+          <ScalarProperty Name="SubSubjectID" ColumnName="SubSubjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMasters">
+      <EntityTypeMapping TypeName="QuestionRecordsModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMaster">
+          <ScalarProperty Name="UserCreateOn" ColumnName="UserCreateOn" />
+          <ScalarProperty Name="UserIsActive" ColumnName="UserIsActive" />
+          <ScalarProperty Name="UserContactNo" ColumnName="UserContactNo" />
+          <ScalarProperty Name="UserEmailID" ColumnName="UserEmailID" />
+          <ScalarProperty Name="UserRoleID" ColumnName="UserRoleID" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserLoginID" ColumnName="UserLoginID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{007E123B-E92E-4A0B-BB7E-70E357A43FE5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>Eq2ImgWinForms</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Astrila.Eq2ImgWinForms</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.CSEXWBDLMANLib">
+      <HintPath>..\..\..\..\Downloads\csEXWB\csExWB\csExWB\bin\Release\Interop.CSEXWBDLMANLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NetSpell.SpellChecker, Version=2.1.7.39341, Culture=neutral, PublicKeyToken=318b389f0db66e46, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NetSpell.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.PdfGenerator, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationSettings.Designer.cs">
+      <DependentUpon>ApplicationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ConfigureSMTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigureSMTPForm.designer.cs">
+      <DependentUpon>ConfigureSMTPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DataAccess.cs" />
+    <Compile Include="Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorForm.Designer.cs">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetFormulaPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetFormulaPopup.Designer.cs">
+      <DependentUpon>GetFormulaPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ControlMover.cs" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\wordcount.gif" />
+    <None Include="Resources\Wordclean.png" />
+    <None Include="Resources\Unlink.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Underline.png" />
+    <None Include="Resources\Time.gif" />
+    <None Include="Resources\Superscript .png" />
+    <None Include="Resources\Subscript .png" />
+    <None Include="Resources\StrikeThrough.png" />
+    <None Include="Resources\SpellCheck.png" />
+    <None Include="Resources\ShowHTML.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\RemoveFormat.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Print.png" />
+    <None Include="Resources\Preview.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\Outdent.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\New.png" />
+    <None Include="Resources\JustifyRight.png" />
+    <None Include="Resources\JustifyLeft.png" />
+    <None Include="Resources\JustifyFull.png" />
+    <None Include="Resources\JustifyCenter.png" />
+    <None Include="Resources\Italic.png" />
+    <None Include="Resources\InsertUnorderedList.png" />
+    <None Include="Resources\InsertTable.png" />
+    <None Include="Resources\InsertOrderedList.png" />
+    <None Include="Resources\InsertImage.png" />
+    <None Include="Resources\InsertHorizontalRule.png" />
+    <None Include="Resources\Indent.png" />
+    <None Include="Resources\HTML.bmp" />
+    <None Include="Resources\ForeColor.bmp" />
+    <None Include="Resources\Find.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Date.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\CreateLink.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Bold.png" />
+    <None Include="Resources\BackColor1.bmp" />
+    <None Include="Resources\AutoLayout.png" />
+    <Compile Include="Helper\GeneralUtil.cs" />
+    <Compile Include="Helper\HTMLEditHelper.cs" />
+    <Compile Include="Helper\HtmlEditorEvents.cs" />
+    <Compile Include="Helper\HtmlEnumerations.cs" />
+    <Compile Include="Helper\HtmlTableProperty.cs" />
+    <Compile Include="Helper\IOleCommandTarget.cs" />
+    <Compile Include="Helper\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\SelectablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\TableSizeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\ToolStripTableSizeSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hlpr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkDialog.Designer.cs">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEnum.cs" />
+    <Compile Include="NewFormClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionsListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionsListing.Designer.cs">
+      <DependentUpon>QuestionsListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResizeAndDisplayImage.cs" />
+    <Compile Include="SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetColumnWidth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetColumnWidth.Designer.cs">
+      <DependentUpon>SetColumnWidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShortcutInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TablePropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablePropertyForm.designer.cs">
+      <DependentUpon>TablePropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextInsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextInsertForm.Designer.cs">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateZoomedImage.cs" />
+    <Compile Include="Workspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workspace.Designer.cs">
+      <DependentUpon>Workspace.cs</DependentUpon>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="ApplicationSettings.resx">
+      <DependentUpon>ApplicationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetFormulaPopup.resx">
+      <DependentUpon>GetFormulaPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hlpr.resx">
+      <DependentUpon>Hlpr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionsListing.resx">
+      <DependentUpon>QuestionsListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetColumnWidth.resx">
+      <DependentUpon>SetColumnWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShortcutInput.resx">
+      <DependentUpon>ShortcutInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablePropertyForm.resx">
+      <DependentUpon>TablePropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextInsertForm.resx">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workspace.resx">
+      <DependentUpon>Workspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\uol.bmp" />
+    <None Include="Resources\underscore.bmp" />
+    <None Include="Resources\rj.bmp" />
+    <None Include="Resources\right_arrow.bmp" />
+    <None Include="Resources\outdent.bmp" />
+    <None Include="Resources\ol.bmp" />
+    <None Include="Resources\lj.bmp" />
+    <None Include="Resources\link.bmp" />
+    <None Include="Resources\italic.bmp" />
+    <None Include="Resources\indent.bmp" />
+    <None Include="Resources\fj.bmp" />
+    <None Include="Resources\color.bmp" />
+    <None Include="Resources\cj.bmp" />
+    <None Include="Resources\bold.bmp" />
+    <None Include="Resources\backcolor.bmp" />
+    <EmbeddedResource Include="ConfigureSMTPForm.resx">
+      <DependentUpon>ConfigureSMTPForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorForm.resx">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkDialog.resx">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

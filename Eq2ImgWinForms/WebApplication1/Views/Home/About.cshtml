@@ -1,0 +1,32 @@
+﻿@model List<WebApplication1.Models.QuestionDisplay>
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+@{
+    int i = 1;
+    foreach (var item in Model)
+    {
+        <div class="clearfix">
+            <span>Question @i .</span>   @Html.Raw(item.QuestionEn)
+            <div class="clearfix"></div>
+              @Html.Raw(item.QuestionHI)
+            <div class="clearfix">
+                @{
+        int j = 1;
+        foreach (var item1 in item.Options)
+        {
+            <div style="float:left;">
+                <span>Option @j:<span>@Html.Raw(item1.QueOption_Eng)</span></span>
+                <span>Option @j:<span>@Html.Raw(item1.QueOption_Hindi)</span></span>
+            </div>
+            j++;
+        }
+                }
+            </div>
+        </div>
+        i++;
+    }}

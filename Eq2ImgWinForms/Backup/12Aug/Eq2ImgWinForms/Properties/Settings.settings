@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Astrila.Eq2ImgWinForms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LinkDialogURLs" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoUpdateFormula" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FormulaImages" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FormulaImages</Value>
+    </Setting>
+    <Setting Name="BackGroundColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Control</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ApplicationFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
+    </Setting>
+    <Setting Name="SplitContainer9Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">184</Value>
+    </Setting>
+    <Setting Name="SplitContainer8Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">186</Value>
+    </Setting>
+    <Setting Name="SplitContainer2Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">327</Value>
+    </Setting>
+    <Setting Name="SplitContainer5Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">315</Value>
+    </Setting>
+    <Setting Name="SplitContainer7Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">88</Value>
+    </Setting>
+    <Setting Name="SplitContainer6Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">88</Value>
+    </Setting>
+    <Setting Name="SplitContainer4Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="SplitContainer3Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">87</Value>
+    </Setting>
+    <Setting Name="SplitContainer1Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">623</Value>
+    </Setting>
+    <Setting Name="SaveAllSplitEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EnableAutoSizePanels" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OpenFormulaPanel" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+F</Value>
+    </Setting>
+    <Setting Name="CustomPaste" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+V</Value>
+    </Setting>
+    <Setting Name="CustomPasteKeysDisplay" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+V</Value>
+    </Setting>
+    <Setting Name="DefultFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

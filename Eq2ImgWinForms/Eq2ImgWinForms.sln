@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eq2ImgWinForms", "Eq2ImgWinForms\Eq2ImgWinForms.csproj", "{007E123B-E92E-4A0B-BB7E-70E357A43FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{464F358D-F922-446F-A80A-B6D086A323CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinHtmlEditor", "WinHtmlEditor\WinHtmlEditor.csproj", "{1D1EF0A4-1D49-4D42-9295-E3B28359389A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_VS2010|Any CPU = Debug_VS2010|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_VS2010|Any CPU = Release_VS2010|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Debug_VS2010|Any CPU.ActiveCfg = Debug|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Debug_VS2010|Any CPU.Build.0 = Debug|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Release_VS2010|Any CPU.ActiveCfg = Release|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Release_VS2010|Any CPU.Build.0 = Release|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007E123B-E92E-4A0B-BB7E-70E357A43FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Debug_VS2010|Any CPU.ActiveCfg = Debug|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Debug_VS2010|Any CPU.Build.0 = Debug|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Release_VS2010|Any CPU.ActiveCfg = Release|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Release_VS2010|Any CPU.Build.0 = Release|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464F358D-F922-446F-A80A-B6D086A323CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Debug_VS2010|Any CPU.ActiveCfg = Debug_VS2010|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Debug_VS2010|Any CPU.Build.0 = Debug_VS2010|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release_VS2010|Any CPU.ActiveCfg = Release_VS2010|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release_VS2010|Any CPU.Build.0 = Release_VS2010|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

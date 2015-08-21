@@ -1,0 +1,399 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Astrila.Eq2ImgWinForms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LinkDialogURLs" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoUpdateFormula" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FormulaImages" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FormulaImages</Value>
+    </Setting>
+    <Setting Name="BackGroundColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Control</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ApplicationFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
+    </Setting>
+    <Setting Name="SplitContainer9Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">184</Value>
+    </Setting>
+    <Setting Name="SplitContainer8Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">186</Value>
+    </Setting>
+    <Setting Name="SplitContainer2Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">327</Value>
+    </Setting>
+    <Setting Name="SplitContainer5Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">315</Value>
+    </Setting>
+    <Setting Name="SplitContainer7Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">88</Value>
+    </Setting>
+    <Setting Name="SplitContainer6Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">88</Value>
+    </Setting>
+    <Setting Name="SplitContainer4Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="SplitContainer3Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">87</Value>
+    </Setting>
+    <Setting Name="SplitContainer1Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">623</Value>
+    </Setting>
+    <Setting Name="SaveAllSplitEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EnableAutoSizePanels" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OpenFormulaPanel" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+F</Value>
+    </Setting>
+    <Setting Name="CustomPaste" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+V</Value>
+    </Setting>
+    <Setting Name="CustomPasteKeysDisplay" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ctrl+Alt+V</Value>
+    </Setting>
+    <Setting Name="DefaultEnglishFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">New Century Schoolbook, 8.25pt</Value>
+    </Setting>
+    <Setting Name="DefaultHindiFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">SHREE-DEV-0708E, 8.25pt</Value>
+    </Setting>
+    <Setting Name="Paragraph_panelCancel" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">12, 16</Value>
+    </Setting>
+    <Setting Name="Paragraph_panelClear" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">111, 16</Value>
+    </Setting>
+    <Setting Name="Paragraph_panelSave" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">630, 16</Value>
+    </Setting>
+    <Setting Name="Paragraph_Closebutton" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">742, 1</Value>
+    </Setting>
+    <Setting Name="ParagraphForQuestions" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 6</Value>
+    </Setting>
+    <Setting Name="TextParagraphForQuestions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Paragraph For Questions</Value>
+    </Setting>
+    <Setting Name="Location_checkBox1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">458, 8</Value>
+    </Setting>
+    <Setting Name="TextSelectSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Select Subject</Value>
+    </Setting>
+    <Setting Name="Location_SelectSubject" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">207, 12</Value>
+    </Setting>
+    <Setting Name="Location_SelectSubjectDDL" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">331, 9</Value>
+    </Setting>
+    <Setting Name="Text_SelectTopic" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Select Topic</Value>
+    </Setting>
+    <Setting Name="Location_SelectTopic" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">603, 12</Value>
+    </Setting>
+    <Setting Name="Location_SelectTopicDDL" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">695, 9</Value>
+    </Setting>
+    <Setting Name="ENAnswerOption1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Answer Option 1</Value>
+    </Setting>
+    <Setting Name="Location_ENAnswerOption1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">24, 8</Value>
+    </Setting>
+    <Setting Name="ENAnswerOption2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Answer Option 2</Value>
+    </Setting>
+    <Setting Name="Location_ENAnswerOption2" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="ENAnswerOption3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AnswerOption 3</Value>
+    </Setting>
+    <Setting Name="Location_ENAnswerOption3" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">15, 5</Value>
+    </Setting>
+    <Setting Name="ENAnswerOption4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Answer Option 4</Value>
+    </Setting>
+    <Setting Name="Locattion_ENAnswerOption4" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="HIAnswerOption1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">उत्तर विकल्प 1</Value>
+    </Setting>
+    <Setting Name="Location_HIAnswerOption1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">33, 8</Value>
+    </Setting>
+    <Setting Name="HIAnswerOption3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">उत्तर विकल्प 3</Value>
+    </Setting>
+    <Setting Name="Location_HIAnswerOption3" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">9, 4</Value>
+    </Setting>
+    <Setting Name="HIAnswerOption2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">उत्तर विकल्प 2</Value>
+    </Setting>
+    <Setting Name="Location_HIAnswerOption2" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">32, 12</Value>
+    </Setting>
+    <Setting Name="HIAnswerOption4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">उत्तर विकल्प 4</Value>
+    </Setting>
+    <Setting Name="Location_HIAnswerOption4" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">8, 5</Value>
+    </Setting>
+    <Setting Name="Text_CopyAnswer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Copy Same&gt;&gt;</Value>
+    </Setting>
+    <Setting Name="Location_CopyAnswer" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">179, 0</Value>
+    </Setting>
+    <Setting Name="Text_SaveQuestion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Save</Value>
+    </Setting>
+    <Setting Name="Location_SaveQuestion" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">431, 10</Value>
+    </Setting>
+    <Setting Name="Text_CancelQuestion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cancel</Value>
+    </Setting>
+    <Setting Name="Location_CancelQuestion" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 5</Value>
+    </Setting>
+    <Setting Name="Location_panel_paragraphPopup" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 24</Value>
+    </Setting>
+    <Setting Name="Size_panel_paragraphPopup" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">355, 146</Value>
+    </Setting>
+    <Setting Name="buttonSaveParagraphQuestionsAndNexe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Save and Next</Value>
+    </Setting>
+    <Setting Name="Location_buttonSaveParagraphQuestionsAndNexe" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">431, 10</Value>
+    </Setting>
+    <Setting Name="EnableAutoLocationSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EmailHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.8</Value>
+    </Setting>
+    <Setting Name="EmailuserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test@truworth.net</Value>
+    </Setting>
+    <Setting Name="EmailPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">soft20</Value>
+    </Setting>
+    <Setting Name="SecureConnection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FinishParagraphQuestion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Save and Next</Value>
+    </Setting>
+    <Setting Name="Location_FinishParagraph" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">81, 12</Value>
+    </Setting>
+    <Setting Name="Textbutton_closeParagraphQuestion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Finish Paragraph Question</Value>
+    </Setting>
+    <Setting Name="Location_button_closeParagraphQuestion" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">261, 10</Value>
+    </Setting>
+    <Setting Name="AutoUpdateFormulaButton" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">210, 5</Value>
+    </Setting>
+    <Setting Name="TextAutoUpdateFormula" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Auto Update Formula</Value>
+    </Setting>
+    <Setting Name="TextSaveFormulaImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Save Formula Image</Value>
+    </Setting>
+    <Setting Name="Location_SaveFormulaImage" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">463, 2</Value>
+    </Setting>
+    <Setting Name="Calc_Devide" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 231</Value>
+    </Setting>
+    <Setting Name="Calc_Multiply" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">40, 232</Value>
+    </Setting>
+    <Setting Name="Calc_PM" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">74, 232</Value>
+    </Setting>
+    <Setting Name="Calc_root" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">108, 232</Value>
+    </Setting>
+    <Setting Name="Calc_Integration" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">142, 232</Value>
+    </Setting>
+    <Setting Name="Calc_fi" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">176, 232</Value>
+    </Setting>
+    <Setting Name="Calc_NotEQ" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">210, 232</Value>
+    </Setting>
+    <Setting Name="Calc_PI" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">244, 232</Value>
+    </Setting>
+    <Setting Name="Calc_Summession" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">278, 231</Value>
+    </Setting>
+    <Setting Name="Calc_Omega" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">312, 231</Value>
+    </Setting>
+    <Setting Name="Calc_Vector" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">346, 229</Value>
+    </Setting>
+    <Setting Name="Calc_Cdot" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">390, 230</Value>
+    </Setting>
+    <Setting Name="Calc_LeftCurly" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 273</Value>
+    </Setting>
+    <Setting Name="Calc_RightCurly" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">40, 273</Value>
+    </Setting>
+    <Setting Name="Calc_leftMetrix" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">74, 273</Value>
+    </Setting>
+    <Setting Name="Calc_RightMatrix" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">108, 273</Value>
+    </Setting>
+    <Setting Name="Calc_LeftBracket" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">142, 273</Value>
+    </Setting>
+    <Setting Name="Calc_RightBracket" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">176, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Delta" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">210, 271</Value>
+    </Setting>
+    <Setting Name="Calc_Alpha" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">244, 271</Value>
+    </Setting>
+    <Setting Name="Calc_Beta" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">278, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Gamma" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">312, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Delta1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">346, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Epsilon" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">380, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Mu" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">414, 271</Value>
+    </Setting>
+    <Setting Name="Calc_psi" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">482, 273</Value>
+    </Setting>
+    <Setting Name="Calc_Theta" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">516, 273</Value>
+    </Setting>
+    <Setting Name="Calc_RationalR" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">550, 271</Value>
+    </Setting>
+    <Setting Name="Calc_Pow" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 313</Value>
+    </Setting>
+    <Setting Name="Calc_a_div_b" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">73, 313</Value>
+    </Setting>
+    <Setting Name="Calc_LeftEq" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">140, 313</Value>
+    </Setting>
+    <Setting Name="Calc_RightEQ" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">201, 313</Value>
+    </Setting>
+    <Setting Name="Calc_SIN" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">7, 342</Value>
+    </Setting>
+    <Setting Name="Calc_SINH" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">75, 342</Value>
+    </Setting>
+    <Setting Name="Calc_COS" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">153, 342</Value>
+    </Setting>
+    <Setting Name="Calc_COSH" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">220, 342</Value>
+    </Setting>
+    <Setting Name="Calc_Tan" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">301, 342</Value>
+    </Setting>
+    <Setting Name="Calc_TanH" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">380, 342</Value>
+    </Setting>
+    <Setting Name="Calc_Infite" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">449, 342</Value>
+    </Setting>
+    <Setting Name="Calc_Limit" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">7, 371</Value>
+    </Setting>
+    <Setting Name="Calc_Expo" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">74, 371</Value>
+    </Setting>
+    <Setting Name="Calc_Matrix" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">143, 371</Value>
+    </Setting>
+    <Setting Name="Calc_Overline" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">6, 398</Value>
+    </Setting>
+    <Setting Name="Calc_Underline" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">75, 398</Value>
+    </Setting>
+    <Setting Name="Calc_ShowFormula" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">626, 172</Value>
+    </Setting>
+    <Setting Name="Calc_PicZoom" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">23, 19</Value>
+    </Setting>
+    <Setting Name="TabMenu4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Atou positioning</Value>
+    </Setting>
+    <Setting Name="TabMenu3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EditorFonts</Value>
+    </Setting>
+    <Setting Name="TabMenu2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sort Keys</Value>
+    </Setting>
+    <Setting Name="TabMenu1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application General</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G5" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">9, 18</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G6" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">269, 18</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G7" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">529, 18</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G4" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">18, 25</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G2" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">10, 14</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G3" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">350, 14</Value>
+    </Setting>
+    <Setting Name="Location_Setting_G1" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">9, 14</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

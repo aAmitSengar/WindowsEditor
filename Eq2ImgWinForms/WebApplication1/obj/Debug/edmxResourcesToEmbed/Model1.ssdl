@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuestionRecordsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Error_Log">
+    <Key>
+      <PropertyRef Name="Error_ID" />
+    </Key>
+    <Property Name="Error_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Error_Date" Type="datetime" />
+    <Property Name="Error_Msg" Type="varchar" MaxLength="500" />
+    <Property Name="Error_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Error_Source" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="QuestionDetail">
+    <Key>
+      <PropertyRef Name="QueOptionID" />
+    </Key>
+    <Property Name="QueOptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QueOption_QuestionID" Type="int" Nullable="false" />
+    <Property Name="QueOption_Eng" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QueOption_Hindi" Type="nvarchar(max)" />
+    <Property Name="QueOption_Other" Type="nvarchar(max)" />
+    <Property Name="QueOption_Sqn" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionMaster">
+    <Key>
+      <PropertyRef Name="QuestionID" />
+    </Key>
+    <Property Name="QuestionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QueSubjectID" Type="int" Nullable="false" />
+    <Property Name="QueSubSubjectID" Type="int" Nullable="false" />
+    <Property Name="QueTitleEng" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QueTitleHindi" Type="nvarchar(max)" />
+    <Property Name="QueTitleOther" Type="nvarchar(max)" />
+    <Property Name="QueIsActive" Type="bit" Nullable="false" />
+    <Property Name="QueCreateBy" Type="int" Nullable="false" />
+    <Property Name="QueCreateOn" Type="datetime" Nullable="false" />
+    <Property Name="QueIsApproved" Type="bit" Nullable="false" />
+    <Property Name="QueModifyOn" Type="datetime" />
+    <Property Name="QueModifyBy" Type="int" />
+  </EntityType>
+  <EntityType Name="RoleMaster">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubjectMaster">
+    <Key>
+      <PropertyRef Name="SubjectID" />
+    </Key>
+    <Property Name="SubjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubjectIsActive" Type="bit" Nullable="false" />
+    <Property Name="SubjectCreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubSubjectMaster">
+    <Key>
+      <PropertyRef Name="SubSubjectID" />
+    </Key>
+    <Property Name="SubSubjectID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubSubjectMasterID" Type="int" Nullable="false" />
+    <Property Name="SubSubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubSubjectIsActive" Type="bit" Nullable="false" />
+    <Property Name="SubSubjectCreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserLoginID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPassword" Type="varbinary" MaxLength="50" />
+    <Property Name="UserRoleID" Type="int" Nullable="false" />
+    <Property Name="UserEmailID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserContactNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserIsActive" Type="bit" Nullable="false" />
+    <Property Name="UserCreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_QuestionDetail_QuestionMaster">
+    <End Role="QuestionMaster" Type="Self.QuestionMaster" Multiplicity="1" />
+    <End Role="QuestionDetail" Type="Self.QuestionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuestionMaster">
+        <PropertyRef Name="QuestionID" />
+      </Principal>
+      <Dependent Role="QuestionDetail">
+        <PropertyRef Name="QueOption_QuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubSubjectMaster_SubjectMaster">
+    <End Role="SubjectMaster" Type="Self.SubjectMaster" Multiplicity="1" />
+    <End Role="SubSubjectMaster" Type="Self.SubSubjectMaster" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectMaster">
+        <PropertyRef Name="SubjectID" />
+      </Principal>
+      <Dependent Role="SubSubjectMaster">
+        <PropertyRef Name="SubSubjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMaster_RoleMaster">
+    <End Role="RoleMaster" Type="Self.RoleMaster" Multiplicity="1" />
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoleMaster">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="UserRoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuestionRecordsModelStoreContainer">
+    <EntitySet Name="Error_Log" EntityType="Self.Error_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuestionDetail" EntityType="Self.QuestionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuestionMaster" EntityType="Self.QuestionMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RoleMaster" EntityType="Self.RoleMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubjectMaster" EntityType="Self.SubjectMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubSubjectMaster" EntityType="Self.SubSubjectMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserMaster" EntityType="Self.UserMaster" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_QuestionDetail_QuestionMaster" Association="Self.FK_QuestionDetail_QuestionMaster">
+      <End Role="QuestionMaster" EntitySet="QuestionMaster" />
+      <End Role="QuestionDetail" EntitySet="QuestionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubSubjectMaster_SubjectMaster" Association="Self.FK_SubSubjectMaster_SubjectMaster">
+      <End Role="SubjectMaster" EntitySet="SubjectMaster" />
+      <End Role="SubSubjectMaster" EntitySet="SubSubjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMaster_RoleMaster" Association="Self.FK_UserMaster_RoleMaster">
+      <End Role="RoleMaster" EntitySet="RoleMaster" />
+      <End Role="UserMaster" EntitySet="UserMaster" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
