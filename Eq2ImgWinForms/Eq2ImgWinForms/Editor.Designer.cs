@@ -84,6 +84,8 @@ namespace Astrila.Eq2ImgWinForms
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.wordDictionary = new NetSpell.SpellChecker.Dictionary.WordDictionary(this.components);
             this.spellCheck = new NetSpell.SpellChecker.Spelling(this.components);
+            this.hrulerControl = new Lyquidity.UtilityLibrary.Controls.RulerControl();
+            this.rulerWord = new Lyquidity.UtilityLibrary.Controls.RulerControl();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tsTopToolBar.SuspendLayout();
             this.cmsHtml.SuspendLayout();
@@ -582,6 +584,51 @@ namespace Astrila.Eq2ImgWinForms
             // 
             this.spellCheck.Dictionary = this.wordDictionary;
             // 
+            // hrulerControl
+            // 
+            this.hrulerControl.ActualSize = true;
+            this.hrulerControl.BackColor = System.Drawing.Color.Khaki;
+            this.hrulerControl.DivisionMarkFactor = 5;
+            this.hrulerControl.Divisions = 10;
+            this.hrulerControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hrulerControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.hrulerControl.Location = new System.Drawing.Point(0, 25);
+            this.hrulerControl.MajorInterval = 1;
+            this.hrulerControl.MiddleMarkFactor = 3;
+            this.hrulerControl.MouseTrackingOn = true;
+            this.hrulerControl.Name = "hrulerControl";
+            this.hrulerControl.Orientation = Lyquidity.UtilityLibrary.Controls.enumOrientation.orHorizontal;
+            this.hrulerControl.RulerAlignment = Lyquidity.UtilityLibrary.Controls.enumRulerAlignment.raBottomOrRight;
+            this.hrulerControl.ScaleMode = Lyquidity.UtilityLibrary.Controls.enumScaleMode.smCentimetres;
+            this.hrulerControl.Size = new System.Drawing.Size(718, 16);
+            this.hrulerControl.StartValue = 0D;
+            this.hrulerControl.TabIndex = 3;
+            this.hrulerControl.VerticalNumbers = false;
+            this.hrulerControl.ZoomFactor = 1D;
+            // 
+            // rulerWord
+            // 
+            this.rulerWord.ActualSize = true;
+            this.rulerWord.DivisionMarkFactor = 10;
+            this.rulerWord.Divisions = 5;
+            this.rulerWord.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.rulerWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rulerWord.ForeColor = System.Drawing.Color.Black;
+            this.rulerWord.Location = new System.Drawing.Point(0, 135);
+            this.rulerWord.MajorInterval = 36;
+            this.rulerWord.MiddleMarkFactor = 8;
+            this.rulerWord.MouseTrackingOn = true;
+            this.rulerWord.Name = "rulerWord";
+            this.rulerWord.Orientation = Lyquidity.UtilityLibrary.Controls.enumOrientation.orHorizontal;
+            this.rulerWord.RulerAlignment = Lyquidity.UtilityLibrary.Controls.enumRulerAlignment.raMiddle;
+            this.rulerWord.ScaleMode = Lyquidity.UtilityLibrary.Controls.enumScaleMode.smPoints;
+            this.rulerWord.Size = new System.Drawing.Size(718, 15);
+            this.rulerWord.StartValue = -72D;
+            this.rulerWord.TabIndex = 14;
+            this.rulerWord.Text = "rulerControl1";
+            this.rulerWord.VerticalNumbers = false;
+            this.rulerWord.ZoomFactor = 1D;
+            // 
             // webBrowser1
             // 
             this.webBrowser1.ContextMenuStrip = this.cmsHtml;
@@ -598,6 +645,8 @@ namespace Astrila.Eq2ImgWinForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rulerWord);
+            this.Controls.Add(this.hrulerControl);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.tsTopToolBar);
             this.Name = "Editor";
@@ -668,6 +717,8 @@ namespace Astrila.Eq2ImgWinForms
         private NetSpell.SpellChecker.Spelling spellCheck;
         private System.Windows.Forms.ToolStripButton tsbSpellCheck;
         private System.Windows.Forms.ToolStripButton btnExportPDF;
+        private Lyquidity.UtilityLibrary.Controls.RulerControl hrulerControl;
+        private Lyquidity.UtilityLibrary.Controls.RulerControl rulerWord;
 
     }
 }

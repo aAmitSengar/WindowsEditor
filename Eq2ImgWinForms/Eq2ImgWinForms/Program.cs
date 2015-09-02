@@ -14,8 +14,8 @@ namespace Astrila.Eq2ImgWinForms
         static void Main()
         {
            // Application.Run(new Workspace());
-            //Application.Run(new QuestionsListing());
-             Application.Run(new EditorForm());
+          //Application.Run(new QuestionsListing());
+              Application.Run(new EditorForm());
         }
     }
 }

@@ -21,12 +21,13 @@ namespace Astrila.Eq2ImgWinForms
         //{
            
         //    e.ToolTipText = @"<P style='MARGIN: 2pt 0in 1pt 15.85pt' class=qnoh11pt><SPAN><?xml:namespace prefix = o ns = 'urn:schemas-microsoft-com:office:office' /><o:p><SPAN style='FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 8pt; mso-bidi-font-family: 'Courier New'; mso-fareast-font-family: 'Times New Roman'; mso-fareast-language: EN-US; mso-ansi-language: EN-US; mso-bidi-language: AR-SA'><FONT size=2 face='New Century Schoolbook'>‘‘Mobile phones and wireless communication devices are completely banned in the examination halls/rooms. Candidates are advised not to keep mobile phones/any other wireless communication devices with them even switching it off, in their own interest. Failing to comply with this provision will be considered as using unfair means in the examination and action will be taken against them including cancellation of their candidature.’’</FONT></SPAN></o:p></SPAN></P>";
-        //}
+        //} 
         private void QuestionsListing_Load(object sender, EventArgs e)
         {
-            SqlDataAdapter dap = new SqlDataAdapter("SELECT  QuestionID,QueTitleEng FROM    QuestionMaster", con);
+            SqlDataAdapter dap = new SqlDataAdapter("SELECT *  FROM [TestPaperEngine].[dbo].[QuestionDetails] where SubSubjectID=1", con);
             DataTable dt1 = new DataTable();
             if (con.State == ConnectionState.Closed) { con.Open(); }
+ 
 
             dap.Fill(dt1);
             dataGridView1.DataSource = dt1;

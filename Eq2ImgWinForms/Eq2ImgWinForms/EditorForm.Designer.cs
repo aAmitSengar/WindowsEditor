@@ -108,6 +108,7 @@ namespace Astrila.Eq2ImgWinForms
             this.BtnSave = new System.Windows.Forms.Button();
             this.panel18 = new Astrila.Eq2ImgWinForms.Helper.SelectablePanel();
             this.panel_droapDown = new Astrila.Eq2ImgWinForms.Helper.SelectablePanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -160,7 +161,6 @@ namespace Astrila.Eq2ImgWinForms
             this.panel40 = new Astrila.Eq2ImgWinForms.Helper.SelectablePanel();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel_mainPAge.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel_outer_Question.SuspendLayout();
@@ -1237,8 +1237,8 @@ namespace Astrila.Eq2ImgWinForms
             // 
             // panel_droapDown
             // 
-            this.panel_droapDown.Controls.Add(this.button2);
             this.panel_droapDown.Controls.Add(this.webBrowser1);
+            this.panel_droapDown.Controls.Add(this.button2);
             this.panel_droapDown.Controls.Add(this.button1);
             this.panel_droapDown.Controls.Add(this.label12);
             this.panel_droapDown.Controls.Add(this.comboBox_SubSubject);
@@ -1251,17 +1251,27 @@ namespace Astrila.Eq2ImgWinForms
             this.panel_droapDown.TabIndex = 3;
             this.panel_droapDown.TabStop = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(983, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "PDF";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(1186, 7);
+            this.webBrowser1.Location = new System.Drawing.Point(1145, 7);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(156, 20);
+            this.webBrowser1.Size = new System.Drawing.Size(197, 55);
             this.webBrowser1.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1105, 7);
+            this.button1.Location = new System.Drawing.Point(1064, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -1717,16 +1727,6 @@ namespace Astrila.Eq2ImgWinForms
             this.label6.TabIndex = 1;
             this.label6.Text = global::Astrila.Eq2ImgWinForms.Properties.Settings.Default.TextParagraphForQuestions;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(983, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "PDF";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // EditorForm
             // 

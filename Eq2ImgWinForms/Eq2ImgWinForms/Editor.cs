@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using System.Web;
 using System.Windows.Forms;
 using mshtml;
+using Lyquidity.UtilityLibrary.Controls;
 using mshtmlTable = mshtml.IHTMLTable;
 using mshtmlTableCaption = mshtml.IHTMLTableCaption;
 using mshtmlTableRow = mshtml.IHTMLTableRow;

@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinHtmlEditor", "WinHtmlEditor\WinHtmlEditor.csproj", "{1D1EF0A4-1D49-4D42-9295-E3B28359389A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulerControl", "RulerControl\RulerControl.csproj", "{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_VS2010|Any CPU = Debug_VS2010|Any CPU
@@ -40,6 +42,14 @@ Global
 		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release_VS2010|Any CPU.Build.0 = Release_VS2010|Any CPU
 		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D1EF0A4-1D49-4D42-9295-E3B28359389A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Debug_VS2010|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Debug_VS2010|Any CPU.Build.0 = Debug|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Release_VS2010|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Release_VS2010|Any CPU.Build.0 = Release|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A2F3F6-DB6E-4D05-9C6E-BE823C17FF19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

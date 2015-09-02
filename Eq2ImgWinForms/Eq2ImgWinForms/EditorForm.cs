@@ -86,6 +86,7 @@ namespace Astrila.Eq2ImgWinForms
         {
             string strPath = AppDomain.CurrentDomain.BaseDirectory + "shree.htm";
             webBrowser1.Navigate(AppDomain.CurrentDomain.BaseDirectory + "shree.htm");
+
             RegisterHotKey(Handle, 42, 0, (int)Keys.F1);
             RegisterHotKey(Handle, 42, 0, (int)Keys.F3);
 
@@ -592,36 +593,46 @@ namespace Astrila.Eq2ImgWinForms
                 else
                 {
                     SQL = "insert into QuestionMaster(QueSubjectID,QueSubSubjectID,QueTitleEng,QueTitleHindi,QueIsActive,QueIsApproved,QueCreateBy,QuestionParagraphID) values(" + MainSubjectID + "," + SubjectTopicID + ",@ques,@quesHI11111,1,0,1," + ParagraphId + ") select @@IDENTITY";
+
                 }
                 SqlCommand cmd = con.CreateCommand();
                 cmd.Transaction = transaction;
                 cmd.CommandText = SQL;
                 cmd.Parameters.AddWithValue("@ques", this.editor.BodyHtml ?? "");
-                cmd.Parameters.AddWithValue("@quesHI11111", this.editor1.BodyHtml ?? "");
+                var finalstring = System.Web.HttpUtility.HtmlDecode((this.editor1.BodyHtml ?? ""));
+                var UniE1 = KrutitoUnicode(finalstring);
+                cmd.Parameters.AddWithValue("@quesHI11111", UniE1 ?? "");
 
                 LastQuestionID = Convert.ToInt16(cmd.ExecuteScalar().ToString());
 
-
+                finalstring = "";
                 #region English,Hindi
                 cmd.CommandText = "insert into QuestionDetail(QueOption_QuestionID,QueOption_Eng,QueOption_Hindi,QueOption_Sqn) values(" + LastQuestionID + ",@quesEN1,@quesHI1,1)";
                 cmd.Parameters.AddWithValue("@quesEN1", this.editorEN1.BodyHtml ?? "");
-                cmd.Parameters.AddWithValue("@quesHI1", this.editorHI1.BodyHtml ?? "");
+                finalstring = System.Web.HttpUtility.HtmlDecode((this.editorHI1.BodyHtml ?? ""));
+                cmd.Parameters.AddWithValue("@quesHI1", KrutitoUnicode(finalstring) ?? "");
 
                 cmd.ExecuteNonQuery();
 
+                finalstring = "";
                 cmd.CommandText = "insert into QuestionDetail(QueOption_QuestionID,QueOption_Eng,QueOption_Hindi,QueOption_Sqn) values(" + LastQuestionID + ",@quesEN2,@quesHI2,2)";
                 cmd.Parameters.AddWithValue("@quesEN2", this.editorEN2.BodyHtml ?? "");
-                cmd.Parameters.AddWithValue("@quesHI2", this.editorHI2.BodyHtml ?? "");
+                finalstring = System.Web.HttpUtility.HtmlDecode((this.editorHI2.BodyHtml ?? ""));
+                cmd.Parameters.AddWithValue("@quesHI2", KrutitoUnicode(finalstring) ?? "");
                 cmd.ExecuteNonQuery();
 
+                finalstring = "";
                 cmd.CommandText = "insert into QuestionDetail(QueOption_QuestionID,QueOption_Eng,QueOption_Hindi,QueOption_Sqn) values(" + LastQuestionID + ",@quesEN3,@quesHI3,3)";
                 cmd.Parameters.AddWithValue("@quesEN3", this.editorEN3.BodyHtml ?? "");
-                cmd.Parameters.AddWithValue("@quesHI3", this.editorHI3.BodyHtml ?? "");
+                finalstring = System.Web.HttpUtility.HtmlDecode((this.editorHI3.BodyHtml ?? ""));
+                cmd.Parameters.AddWithValue("@quesHI3", KrutitoUnicode(finalstring) ?? "");
                 cmd.ExecuteNonQuery();
 
+                finalstring = "";
                 cmd.CommandText = "insert into QuestionDetail(QueOption_QuestionID,QueOption_Eng,QueOption_Hindi,QueOption_Sqn) values(" + LastQuestionID + ",@quesEN4,@quesHI4,4)";
                 cmd.Parameters.AddWithValue("@quesEN4", this.editorEN4.BodyHtml ?? "");
-                cmd.Parameters.AddWithValue("@quesHI4", this.editorHI4.BodyHtml ?? "");
+                finalstring = System.Web.HttpUtility.HtmlDecode((this.editorHI4.BodyHtml ?? ""));
+                cmd.Parameters.AddWithValue("@quesHI4", KrutitoUnicode(finalstring) ?? "");
                 cmd.ExecuteNonQuery();
                 #endregion
 
@@ -704,30 +715,40 @@ namespace Astrila.Eq2ImgWinForms
                 GetCaretPos(ref p);
                 // StreamReader sm = new StreamReader(Path.Combine(dialogform.tempGifFilePath, ""));
 
-                var aImg = "<IMG border=0 hspace=0 alt='' src='" + GetImage(dialogform.tempGifFilePath) + "'align=baseline>";
+                string aImg = "<IMG border=0 hspace=0 alt='' src='" + GetImage(dialogform.tempGifFilePath) + "'align=baseline>";
 
                 switch (myenum)
                 {
                     case MyEnum.EnglishQuestion:
-                        // HtmlElement currentElement = editor.webBrowser1.Document.GetElementFromPoint(p);
-                        // currentElement.InsertAdjacentElement(HtmlElementInsertionOrientation.AfterBegin, userimage);
+                        var CurrentSelectedsLocation = (mshtml.IHTMLTxtRange)editor.doc.selection.createRange();
+                        CurrentSelectedsLocation.pasteHTML(aImg);
+                        //  HtmlElement currentElement = editor.webBrowser1.Document.GetElementFromPoint(p);
+                        // currentElement.InsertAdjacentElement(HtmlElementInsertionOrientation.AfterBegin, (HtmlElement)aImg);
                         //editor.webBrowser1.Document.Body.AppendChild(userimage);
-                        editor.BodyHtml = editor.BodyHtml + aImg;
+                        //editor.BodyHtml = editor.BodyHtml + aImg;
                         break;
                     case MyEnum.EnglishOption1:
-                        editorEN1.BodyHtml = editorEN1.BodyHtml + aImg;
+                        var CurrentSelectedsLocationEN1 = (mshtml.IHTMLTxtRange)editorEN1.doc.selection.createRange();
+                        CurrentSelectedsLocationEN1.pasteHTML(aImg);
+                        // editorEN1.BodyHtml = editorEN1.BodyHtml + aImg;
                         //  editorEN1.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.EnglishOption2:
-                        editorEN2.BodyHtml = editorEN2.BodyHtml + aImg;
+                        var CurrentSelectedsLocationEN2 = (mshtml.IHTMLTxtRange)editorEN2.doc.selection.createRange();
+                        CurrentSelectedsLocationEN2.pasteHTML(aImg);
+                        // editorEN2.BodyHtml = editorEN2.BodyHtml + aImg;
                         // editorEN2.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.EnglishOption3:
-                        editorEN3.BodyHtml = editorEN3.BodyHtml + aImg;
+                        var CurrentSelectedsLocationEN3 = (mshtml.IHTMLTxtRange)editorEN3.doc.selection.createRange();
+                        CurrentSelectedsLocationEN3.pasteHTML(aImg);
+                        //editorEN3.BodyHtml = editorEN3.BodyHtml + aImg;
                         //editorEN3.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.EnglishOption4:
-                        editorEN4.BodyHtml = editorEN4.BodyHtml + aImg;
+                        var CurrentSelectedsLocationEN4 = (mshtml.IHTMLTxtRange)editorEN4.doc.selection.createRange();
+                        CurrentSelectedsLocationEN4.pasteHTML(aImg);
+                        // editorEN4.BodyHtml = editorEN4.BodyHtml + aImg;
                         // editorEN4.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.HindiQuestion:
@@ -735,22 +756,35 @@ namespace Astrila.Eq2ImgWinForms
                         //currentElement1.Id
                         // .InsertAdjacentElement(HtmlElementInsertionOrientation.AfterBegin, userimage);
                         // editor1.webBrowser1.Document.Body.AppendChild(userimage);
-                        editor1.BodyHtml = editor1.BodyHtml + aImg;
+                        var CurrentSelectedsLocationHI = (mshtml.IHTMLTxtRange)editor.doc.selection.createRange();
+                        CurrentSelectedsLocationHI.pasteHTML(aImg);
+
+                        //editor1.BodyHtml = editor1.BodyHtml + aImg;
                         break;
                     case MyEnum.HindiOption1:
-                        editorHI1.BodyHtml = editorHI1.BodyHtml + aImg;
+
+                        var CurrentSelectedsLocationHI1 = (mshtml.IHTMLTxtRange)editorHI1.doc.selection.createRange();
+                        CurrentSelectedsLocationHI1.pasteHTML(aImg);
+                        //editorHI1.BodyHtml = editorHI1.BodyHtml + aImg;
+
                         // editorHI1.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.HindiOption2:
-                        editorHI2.BodyHtml = editorHI2.BodyHtml + aImg;
+                        var CurrentSelectedsLocationHI2 = (mshtml.IHTMLTxtRange)editorHI2.doc.selection.createRange();
+                        CurrentSelectedsLocationHI2.pasteHTML(aImg);
+                        //editorHI2.BodyHtml = editorHI2.BodyHtml + aImg;
                         //editorHI2.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.HindiOption3:
-                        editorHI3.BodyHtml = editorHI3.BodyHtml + aImg;
+                        var CurrentSelectedsLocationHI3 = (mshtml.IHTMLTxtRange)editorHI3.doc.selection.createRange();
+                        CurrentSelectedsLocationHI3.pasteHTML(aImg);
+                        //editorHI3.BodyHtml = editorHI3.BodyHtml + aImg;
                         // editorHI3.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     case MyEnum.HindiOption4:
-                        editorHI4.BodyHtml = editorHI4.BodyHtml + aImg;
+                        var CurrentSelectedsLocationHI4 = (mshtml.IHTMLTxtRange)editorHI4.doc.selection.createRange();
+                        CurrentSelectedsLocationHI4.pasteHTML(aImg);
+                        //editorHI4.BodyHtml = editorHI4.BodyHtml + aImg;
                         //editorHI4.webBrowser1.Document.Body.AppendChild(userimage);
                         break;
                     default:
@@ -1342,7 +1376,38 @@ namespace Astrila.Eq2ImgWinForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            var aa = KrutitoUnicode(editor1.webBrowser1.Document.Body.InnerText);
+            string TableStart = "<table>";
+            string TableRowStart = "<tr>";
+            string TableDataStart = "<dt>";
+            string TableDataEnd = "</dt>";
+            string TableRowEnd = "</tr>";
+            string TableEnd = "</tr></table>";
+
+            var HtmlTable = TableStart
+                + TableRowStart
+                + TableDataStart + "" + TableEnd
+                + TableDataStart + "" + TableEnd
+                + TableDataStart + "" + TableEnd
+                + TableRowEnd
+                + TableEnd;
+
+            //mshtml.HTMLTable table = new HTMLTable(); 
+            //mshtml.HTMLTableRow tr = new HTMLTableRow();
+            //table.cols = 2;
+            //mshtml.HTMLTableRow tableRow;
+            //for (int idxRow = 0; idxRow < numberRows; idxRow++)
+            //{
+            //    tableRow = (mshtml.HTMLTableRow)table.insertRow();
+            //    // add the new columns to the end of each row
+            //    for (int idxCol = 0; idxCol < numberCols; idxCol++)
+            //    {
+            //        tableRow.insertCell();
+            //    }
+            //}
+
+
+            var bb = System.Web.HttpUtility.HtmlDecode(editor1.webBrowser1.Document.Body.InnerHtml);
+            var aa = KrutitoUnicode(bb);
         }
 
         #region Concert to UNICODE

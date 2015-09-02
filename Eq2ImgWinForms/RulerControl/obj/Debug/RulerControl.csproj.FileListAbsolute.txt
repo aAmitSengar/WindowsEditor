@@ -1,0 +1,7 @@
+C:\Users\amits\Downloads\Ruler_src\RulerControl\bin\Debug\RulerControl.dll
+C:\Users\amits\Downloads\Ruler_src\RulerControl\bin\Debug\RulerControl.pdb
+C:\Users\amits\Downloads\Ruler_src\RulerControl\obj\Debug\RulerControl.csprojResolveAssemblyReference.cache
+C:\Users\amits\Downloads\Ruler_src\RulerControl\obj\Debug\Lyquidity.UtilityLibrary.Controls.RulerControl.resources
+C:\Users\amits\Downloads\Ruler_src\RulerControl\obj\Debug\RulerControl.csproj.GenerateResource.Cache
+C:\Users\amits\Downloads\Ruler_src\RulerControl\obj\Debug\RulerControl.dll
+C:\Users\amits\Downloads\Ruler_src\RulerControl\obj\Debug\RulerControl.pdb

@@ -123,6 +123,7 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationSettings.cs">
@@ -161,6 +162,7 @@
       <DependentUpon>GetFormulaPopup.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\ControlMover.cs" />
+    <Content Include="PDF.html" />
     <None Include="Resources\pdf.png" />
     <None Include="Resources\wordcount.gif" />
     <None Include="Resources\Wordclean.png" />
@@ -377,6 +379,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RulerControl\RulerControl.csproj">
+      <Project>{a6a2f3f6-db6e-4d05-9c6e-be823c17ff19}</Project>
+      <Name>RulerControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
